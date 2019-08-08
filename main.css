@@ -11,6 +11,10 @@ body {
     min-height: 100vh;
 
 }
+.clear{
+    clear:both;
+}
+
 .container {
     max-width: 800px;
     margin: auto auto;
@@ -19,6 +23,7 @@ body {
 
 .txtb {
     width: 100%;
+    margin: 10px 0;
     padding: 10px;
     font-size: 15px;
     border: none;
@@ -48,4 +53,45 @@ body {
 .comp .task {
     background-color: rgba(0,0,0,0.2);
 
+}
+
+.task-detail-mask {
+    display:none;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 1;
+
+}
+
+.task-detail {
+    display: none;
+    margin-left: 50%; 
+    top: 100px;                                                                                                                                                                                                           ;
+    position: fixed;
+    background: #ffffff;
+    z-index: 2;
+}
+.task-detail i, 
+.task-content,
+textarea,
+.date-info,
+button {
+    margin: 10px 10px;
+    padding: 5px;
+    display: block;
+}
+/* .task-detail i {
+    float: right;
+} */
+
+#notcomptoggler,
+#comptoggler {
+    float: right;
+}
+h3 {
+    display: block;
+    margin: 10px 0;
 }

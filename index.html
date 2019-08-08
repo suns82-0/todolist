@@ -12,18 +12,32 @@
 <body>
     <div class="container">
         <input type="text" class="txtb" placeholder="Add a task">
+        <!-- <span class="clear">  -->
+            <h3>Not Completed
+            <span> <i class="fas fa-angle-down" id="notcomptoggler"></i></span>
+            </h3>
         <div class="notcomp">
-            <h3>Not Completed</h3>
+            
             
         </div>
+        <h3>Completed
+            <span><i class="fas fa-angle-down" id="comptoggler"></i></span>
+        </h3>
         <div class="comp">
-            <h3>Completed</h3>
+            
   
         </div>
 
     </div>
+    <div class="task-detail-mask"></div>
+    <div class="task-detail">
+
+    </div>
+    <script src="./store.legacy.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
+    <script src="./layout.js"></script>
+    
 
 </body>
 </html>
